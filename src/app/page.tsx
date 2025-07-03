@@ -3,6 +3,8 @@ import Image from "next/image";
 import Tate from "@/components/Tate";
 import Yoko from "@/components/Yoko" ;
 import Button from "@/components/Button";
+import Kasanari from "@/components/Kasanari";
+import Tates from "@/components/Tates";
 
 export default function Page() {
 	return (
@@ -94,28 +96,60 @@ export default function Page() {
 				</div>
 				
 				{/*企業情報*/}
-				
-				<div className="flex-row-reverse ">
-					
-					<div className="bg-white rounded-3xl overflow-hidden w-[500] h-[500]" >
-						<h1 className="text-3xl font-bold p-8">企業情報</h1>
-						<p className="p-8">日本コカ・コーラ株式会社は、ザ コカ・コーラ カンパニーの日本法人として1957年に設立され、日本での事業を本格的にスタートしました。日本におけるコカ・コーラシステムは、原液の供給と製品の企画開発およびマーケティング活動を担う日本コカ・コーラ株式会社と、製品の製造・販売を行うボトラー社や関連会社などで構成されています。</p>
-					</div>					
-					
-					<div className="rounded-3xl overflow-hidden">
-						<Image
-						src='/images/kaisha1.jpg'
-						alt='会社の写真'
-						width={600}
-						height={500}		
-						className="h-full"		
-						/>
-					</div>
-					
-					
+				{/*クラスで画像の右左を変更するコードを書いて、クラス1が左、クラス2が右の要素の位置を調整する。reverseなら逆になる。 */}
+				<div className="mb-32">
+					<Kasanari
+					className1="translate-y-12"
+					className2="-translate-x-12"
+					alt="会社の写真"
+					src="/images/kaisha1.jpg"
+					name="企業情報"
+					text="日本コカ･コーラ株式会社は、ザ コカ･コーラ カンパニーの日本法人として1957年に設立され、日本での事業を本格的にスタートしました。日本におけるコカ･コーラシステムは、原液の供給と製品の企画開発およびマーケティング活動を担う日本コカ･コーラ株式会社と、製品の製造・販売を行うボトラー社や関連会社などで構成されています。"
+					/>
 				</div>
 
+				<div className="flex justify-center mb-24">
+					<Tates
+					src="/images/kaisha2.jpg"
+					alt="採用情報"
+					name="採用情報"
+					/>
 
+					<Tates
+					src="/images/jihanki.jpg"
+					alt="自動販売機設置の流れ"
+					name="自動販売機設置の流れ"
+					/>
+
+					<Tates
+					src="/images/history.jpg"
+					alt="歴史"
+					name="日本におけるコカ・コーラビジネスの歴史"
+					/>
+				</div>
+
+				<div className="mb-32">
+					<Kasanari
+					className="flex-row-reverse"
+					className1="translate-y-10"
+					className2="translate-x-10"
+					alt="スポーツ"
+					name="ザ･コカ･コーラ･カンパニーはスポーツやエンターテインメントへのパートナーシップを大切にしています。"
+					src="/images/olympic.jpg"
+					text="1900年に軽歌劇・歌手のヒルダ・クラーク氏と初めて契約を交わし、1905年にはオペラ歌手のリリアン・ノルディカを起用した広告が米国の全国誌に掲載されました。それからおよそ120年。コカ･コーラ社にとって音楽、スポーツ、エンターテインメントは欠かせない要因であり続けています。"
+					/>
+				</div>
+
+				<div>
+					<Kasanari
+					className1="translate-y-10"
+					className2="-translate-x-10"
+					alt="乾杯"
+					name="知られざるコカ･コーラ社の世界観"
+					src="/images/sekaikan.jpg"
+					text="コカ･コーラ社は創業以来、社会貢献を通して成長してきました。歴史、クリスマスとの関係、トクホ製品開発秘話など、知られざるコカ･コーラの“トピック“をお届けします。"
+					/>
+				</div>
 			</main>
 		</div>
 	)
