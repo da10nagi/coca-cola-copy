@@ -209,7 +209,7 @@ export default function Page() {
 			</main>
 
 			<footer className="bg-black">
-				<div className="p-36 pt-8 border-b border-white-500">
+				<div className="p-48 pt-36 border-b border-white-500">
 					<Image
 					src="/images/logo-white-large.svg"
 					alt="会社ロゴ"
@@ -217,7 +217,38 @@ export default function Page() {
 					height={200}
 					/>
 
-					<div className="border-b-2 border-"></div>
+					<div className="h-[1px] bg-white mt-8"></div>
+					<div className=" grid grid-cols-3 text-white font-bold">
+						<div>
+							<h3 className="text-[9px] mt-6">ABOUT US</h3>
+							<p className="mt-6 text-sm">企業情報</p>
+							<p className="mt-6 text-sm">プレスセンター</p>
+							<p className="mt-6 text-sm">沿革</p>
+							<p className="mt-6 text-sm">採用情報</p>
+							<p className="mt-6 text-sm">パーソナーシップ</p>
+							<p className="mt-6 text-sm">トピックス</p>
+						</div>
+						
+						<div className="-translate-x-40">
+							<h3 className="text-[9px] mt-6">NEED HELP?</h3>
+							<p className="mt-6 text-sm">よくあるご質問</p>
+							<p className="mt-6 text-sm">サイトマップ</p>
+							<p className="mt-6 text-sm">お客様相談室</p>
+						</div>
+
+						<div className="-translate-x-80">
+							<h3 className="text-[10px] mt-6">各種ポリシー</h3>
+							<p className="mt-6 text-sm">利用規約</p>
+							<p className="mt-6 text-sm">プライバシーポリシー</p>
+							<p className="mt-6 text-sm">サイトポリシー</p>
+							<p className="mt-6 text-sm">Cookieポリシー</p>
+							<p className="mt-6 text-sm">各種ポリシー</p>
+						</div>
+					</div>
+					<div className="h-[1px] bg-white mt-8"></div>
+
+
+
 
 				</div>
 			</footer>
