@@ -5,6 +5,7 @@ import Yoko from "@/components/Yoko" ;
 import Button from "@/components/Button";
 import Kasanari from "@/components/Kasanari";
 import Tates from "@/components/Tates";
+import Icons from "@/components/Icons";
 
 export default function Page() {
 	return (
@@ -108,26 +109,31 @@ export default function Page() {
 					/>
 				</div>
 
+				{/*ちっちゃい縦のやつ */}
 				<div className="flex justify-center mb-24">
 					<Tates
+					className="max-w-xs"
 					src="/images/kaisha2.jpg"
 					alt="採用情報"
 					name="採用情報"
 					/>
 
 					<Tates
+					className="max-w-xs"
 					src="/images/jihanki.jpg"
 					alt="自動販売機設置の流れ"
 					name="自動販売機設置の流れ"
 					/>
 
 					<Tates
+					className="max-w-xs"
 					src="/images/history.jpg"
 					alt="歴史"
 					name="日本におけるコカ・コーラビジネスの歴史"
 					/>
 				</div>
 
+				{/*重なり2逆ver*/}
 				<div className="mb-32">
 					<Kasanari
 					className="flex-row-reverse"
@@ -140,7 +146,8 @@ export default function Page() {
 					/>
 				</div>
 
-				<div>
+				{/*重なり3 */}
+				<div className="mb-32">
 					<Kasanari
 					className1="translate-y-10"
 					className2="-translate-x-10"
@@ -150,7 +157,70 @@ export default function Page() {
 					text="コカ･コーラ社は創業以来、社会貢献を通して成長してきました。歴史、クリスマスとの関係、トクホ製品開発秘話など、知られざるコカ･コーラの“トピック“をお届けします。"
 					/>
 				</div>
+
+				{/*縦2つ */}
+				<div className="flex justify-center mb-16">
+					<Tates
+					className="max-w-lg"
+					src="/images/soudan.jpg"
+					alt="相談室"
+					name="お客様相談室"
+					/>
+					<Tates
+					className="max-w-lg"
+					src="/images/coke-on.jpg"
+					alt="コークオン"
+					name="COKE ON"
+					/>
+				</div>
+
+				{/*製品情報 */}
+				<div>
+					<h1 className="text-3xl font-bold text-center mb-8">製品情報</h1>
+					<div className="flex justify-center">
+						<Icons
+						src="/images/s-coke.jpg"
+						alt="コカ・コーラ"
+						/>
+						<Icons
+						src="/images/s-irohasu.jpg"
+						alt="いろはす"
+						/>
+						<Icons
+						src="/images/s-ayataka.jpg"
+						alt="綾鷹"
+						/>
+					</div>
+					<div className="flex justify-center">
+						<Icons
+						src="/images/s-aquari.jpg"
+						alt="アクエリアス"
+						/>
+						<Icons
+						src="/images/s-georgia.jpg"
+						alt="ジョージア"
+						/>
+						<Icons
+						src="/images/s-fanta.jpg"
+						alt="ファンタ"
+						/>
+					</div>
+				</div>
 			</main>
+
+			<footer className="bg-black">
+				<div className="p-36 pt-8 border-b border-white-500">
+					<Image
+					src="/images/logo-white-large.svg"
+					alt="会社ロゴ"
+					width={250}
+					height={200}
+					/>
+
+					<div className="border-b-2 border-"></div>
+
+				</div>
+			</footer>
 		</div>
 	)
 }
